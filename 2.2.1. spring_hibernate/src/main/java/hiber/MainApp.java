@@ -46,13 +46,11 @@ public class MainApp {
             System.out.println();
         }
 
-        System.out.println(userService.getUserByCar("ferrari", 3).toString());
-        System.out.println(userService.getUserByCar("lada", 3).toString());
-        System.out.println(userService.getUserByCar("ferrari", 4).toString());
-        System.out.println(userService.getUserByCar("lada", 4).toString());
+        System.out.println(userService.getUserByCarModelAndSeries("ferrari", 3).toString());
+        System.out.println(userService.getUserByCarModelAndSeries("lada", 3).toString());
+        System.out.println(userService.getUserByCarModelAndSeries("ferrari", 4).toString());
+        System.out.println(userService.getUserByCarModelAndSeries("lada", 4).toString());
 
         context.close();
     }
 }
-
-//4. Создайте несколько пользователей с машинами, добавьте их в базу данных, вытащите обратно
